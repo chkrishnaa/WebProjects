@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://wallpapers.com/images/hd/contrast-1920-x-1200-wallpaper-niljrjko0w3lscg1.jpg') #030728 no-repeat center;
+}
+
+.slide-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 100px 40px;
+}
+
+.card-list .card-items{
+    color: white;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.card-list .card-items .user-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border: solid white 2px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.card-list .card-items .user-name{
+    text-align: center;
+}
+
+.card-list .card-items .user-profession{
+    text-align: center;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 500;
+    margin: 10px 0 30px;
+}
+
+.card-list .card-items .message-button{
+    font-size: 1.15rem;
+    padding: 10px 40px;
+    color: black;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+    border: 1px solid transparent;
+}
+
+.card-list .card-items .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+}
+
+.social-media-icons {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.social-media-icons .icon {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.social-media-icons .icon span {
+    position: relative;
+    height: 30px;
+    width: 15px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+}
+
+.social-media-icons .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.social-media-icons .icon span i:hover {
+    text-align: center;
+    transform: scale(1.4);
+    transition: all 0.3s ease;
+    cursor: pointer
+}
+
+.social-media-icons .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    padding: 7.5px 20px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s all cubic-bezier(0.68, -0.5, 0.265, 1.55);
+}
+
+.social-media-icons .icon:hover .tooltip {
+    top: -30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.social-media-icons .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;    
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.swiper-pagination {
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    background: white;
+    height: 15px;
+    width: 15px;
+}
+.swiper-pagination-bullet:hover {
+    background: green;
+}
+
+swiper-slider-button{
+    background: white;
+    margin-top: -50px;
+}
+
+
+.swiper-slide-button {
+    color: white;
+}
+.swiper-slide-button:hover {
+    color: green;
+}
+
+@media (max-width: 768px){
+    .slider-wrapper{
+        margin: 0 10px 30px;
+    }
+    .swiper-slide-button{
+        display: none;
+    }
+}
